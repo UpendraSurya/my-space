@@ -1,0 +1,49 @@
+TEMPLATE_CONTENT = r"""
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\begin{document}
+\pagestyle{empty}
+
+% ===== HEADER =====
+\begin{center}
+    {\LARGE \textbf{[CANDIDATE_NAME]}}\\[4pt]
+    \href{mailto:[EMAIL]}{[EMAIL]} \quad | \quad [PHONE] \\
+    \href{[LINKEDIN]}{LinkedIn} \quad | \quad \href{[GITHUB]}{GitHub}
+\end{center}
+
+\vspace{4pt}
+
+% ===== PROFESSIONAL SUMMARY =====
+\section{Professional Summary}
+[PROFESSIONAL_SUMMARY]
+
+% ===== SKILLS =====
+\section{Technical Skills}
+[SKILLS_LIST]
+
+% ===== EXPERIENCE =====
+\section{Experience}
+[EXPERIENCE_SECTION]
+
+% ===== PROJECTS =====
+\section{Projects}
+[PROJECT_DESCRIPTIONS]
+
+% ===== EDUCATION =====
+\section{Education}
+[EDUCATION_SECTION]
+
+\end{document}
+"""

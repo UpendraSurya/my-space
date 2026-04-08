@@ -1,0 +1,39 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+.pytest_cache/
+*.db
+*.sqlite3
+
+# Output / generated files
+job-application-agent/output/
+job-application-agent/database/jobs.db
+
+# macOS
+.DS_Store
+*.DS_Store
+
+# Xcode / build artifacts
+JobAgentApp/build/
+JobAgentApp/*.xcodeproj/xcuserdata/
+JobAgentApp/*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# Large model / data files
+yolov8n.pt
+Data/
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+apicall.ipynb
+
+# Secrets
+*.key
+*.pem

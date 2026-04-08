@@ -1,0 +1,13 @@
+sqlalchemy>=2.0.0
+aiosqlite
+playwright
+beautifulsoup4
+requests
+httpx
+groq
+Pillow
+python-dotenv
+pydantic>=2.0
+pydantic-settings
+lxml
+html5lib
